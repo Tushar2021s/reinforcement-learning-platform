@@ -28,8 +28,8 @@ st.sidebar.subheader('algorithm')
 alg_name = st.sidebar.selectbox('',tuple(agent_dict.keys()))
 
 st.sidebar.subheader('environment')
-env_name = st.sidebar.selectbox('',('CartPole-v0','Pendulum-v0','LunarLander-v2','LunarLanderContinuous-v2','BipedalWalker-v3'))
-
+# env_name = st.sidebar.selectbox('',('CartPole-v0','Pendulum-v0','LunarLander-v2','LunarLanderContinuous-v2','BipedalWalker-v3'))
+env_name = st.sidebar.selectbox('',('CartPole-v1','Pendulum-v1','LunarLander-v3','LunarLanderContinuous-v3','BipedalWalker-v3'))
 st.sidebar.subheader('Hyperparamter')
 max_episodes = st.sidebar.number_input('max_episodes',value=1000)
 max_steps = st.sidebar.number_input('max_steps',value=1000)
